@@ -1,5 +1,5 @@
 aiohttp
-pyrofork
+git+https://github.com/zevtyardt/lk21.git
 python-dotenv
 tgcrypto
 motor
