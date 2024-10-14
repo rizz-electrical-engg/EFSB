@@ -16,9 +16,9 @@ class Telegram:
     FORCE_SUB = env.get('FORCE_UPDATES_CHANNEL', True)
     FORCE_SUB = True if str(FORCE_SUB).lower() == "true" else False
     SLEEP_THRESHOLD = int(env.get("SLEEP_THRESHOLD", "60"))
-    FILE_PIC = env.get('FILE_PIC', "https://envs.sh/nxK.jpg")
+    FILE_PIC = env.get('FILE_PIC', "https://envs.sh/nxC.jpg")
     START_PIC = env.get('START_PIC', "https://envs.sh/nMk.jpg")
-    VERIFY_PIC = env.get('VERIFY_PIC', "https://envs.sh/nxC.jpg")
+    VERIFY_PIC = env.get('VERIFY_PIC', "https://envs.sh/nxK.jpg")
     MULTI_CLIENT = False
     FLOG_CHANNEL = int(env.get("FLOG_CHANNEL", None))   # Logs channel for file logs
     ULOG_CHANNEL = int(env.get("ULOG_CHANNEL", None))   # Logs channel for user logs
