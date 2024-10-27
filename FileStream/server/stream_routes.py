@@ -13,6 +13,15 @@ from FileStream.utils.render_template import render_page
 
 routes = web.RouteTableDef()
 
+# In FileStream/server/stream_routes.py
+
+@routes.get("/", allow_head=True)
+async def root_route_handler(_):
+    return web.Response(
+        status=200,
+        text="Hello, I'm working!"
+    )
+
 @routes.get("/status", allow_head=True)
 async def root_route_handler(_):
     return web.json_response(
